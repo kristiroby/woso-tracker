@@ -574,7 +574,7 @@ export default function WomensTable() {
         <li 
             key={team.team.id}
         >
-            {team.team.name} 
+            {team.team.name}: &nbsp; 
             {team.points}
             {/* <img src={team.team.logo}></img> */}
         </li>

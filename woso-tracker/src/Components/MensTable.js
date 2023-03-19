@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react';
 
-export default function Table() {
+export default function MensTable() {
     const [table, setTable] = useState([]);
     // useEffect(() => {
     //     getData()
@@ -930,11 +930,19 @@ export default function Table() {
           ]
       ]
   }
+    // const simpleMensStandings = []
+    // fullMensStandings.standings[0].map(team => simpleMensStandings.push({
+    //     id: team.team.id,
+    //     name: team.team.name,
+    //     points: team.points
+    // }))
+    // console.log(fullMensStandings.standings[0])
+    // console.log(simpleMensStandings)
     const names = mensStandings.standings[0].map(team => 
         <li 
             key={team.team.id}
         >
-            {team.team.name} 
+            {team.team.name}: &nbsp;
             {team.points}
             {/* <img src={team.team.logo}></img> */}
         </li>
